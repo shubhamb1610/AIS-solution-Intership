@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+
+<style type="text/css">
+		input
+		{
+			border-radius:0.5em;
+			padding: 0.5em;
+			background-color: white;
+
+		}	
+		
+		button
+		{
+			border-radius:0.5em;
+			padding: 0.5em;
+			margin-left: 8em;
+			background-color: white;
+
+		}
+
+		select
+		{
+			border-radius:0.5em;
+			padding: 0.5em;
+			background-color: white;
+
+		}
+
+		label
+		{
+			font-size: 16px;
+		}
+
+		#mob
+		{
+			outline: 0;
+		}
+
+		#mob:valid
+		{
+			border-color: blue;
+		}
+
+		#mob:focus:invalid
+		{
+			border-color: red;
+		}
+
+		fieldset
+		{
+			width: 60%;
+			height: auto;
+			background-color: black;
+			position: absolute;
+			left: 20%;
+		}
+
+		body
+		{
+			background-color: black;
+			color: floralwhite;
+		}	
+
+		img
+		{
+			position: absolute;
+			width: 200px;
+			height: auto;
+			right: -2px;
+			top: -34px;
+			border: solid 2px white;
+			padding: 10px;
+			border-radius: 15px;
+			border-right: 0px;
+			border-top: 0px;
+
+		}
+
+		
+
+
+</style>
+
+
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend><h2>Registration form</h2></legend>
+		<h3>Enter your details below</h3>
+
+		<img src="logo.png">
+
+		<ul type="square">
+			<li> <label for="email"> Email: </label> <br> <input type="email" id="email" placeholder="example@gmail.com" required> </li>
+			<br>
+			<li> <label for="pass"> Password: </label> <br> <input type="password" id="pass" placeholder="password" required> </li>
+			<br>
+			<li> <label for="mob"> Mobile No: </label> <br> <input type="tel" id="mob" placeholder="ex.1234567890" min="10" max="10" pattern="[0-9]{10}" required> </li>
+			<br>
+			<hr color="white">
+
+			<li> 
+				<h3>Enter Your Profession :</h3>
+				<input type="radio" id="student" name="profession"> <label for="student"> STUDENT </label> <br>  	
+				<input type="radio" id="teacher" name="profession"> <label for="teacher"> TEACHER </label> 	<br>
+				<input type="radio" id="developer" name="profession"> <label for="developer"> DEVELOPER </label> <br> 
+
+			</li>
+					<br>
+					<label>Choose the stage if your Student </label>
+					<select required>
+						<option> Primary </option>
+						<option> SSC</option>
+						<option> HSC/Diploma </option>
+						<option> Graduation </option>
+						<option> Post Graduation </option>
+						
+					</select>
+
+					<hr color="white">
+
+			<li> <label for="DOB"> Enter your Date of Birth </label> <input type="date" id="DOB" required> </li>		
+			
+					<hr color="white">
+
+						<li> <input type="text" placeholder="Any notes"> </li>
+
+					<hr color="white">
+		</ul>
+
+		
+		<button type="submit" >Submit</button>
+		<button type="reset" >Reset</button>
+	
+	</fieldset>	
+	</form> 
+
+
+</body>
+
+</html>
